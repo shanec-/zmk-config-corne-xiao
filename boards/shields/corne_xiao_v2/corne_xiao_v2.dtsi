@@ -2,7 +2,7 @@
 #include <layouts/corne_xiao/6column.dtsi>
 #include <layouts/corne_xiao/5column.dtsi>
 
-&xiao_serial { status = "disabled"; };
+/* &xiao_serial { status = "disabled"; }; */
 
 &corne_xiao_6col_layout {
     transform = <&default_transform>;
@@ -104,23 +104,23 @@ RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5) RC(3,5) RC(3,6) RC(2,6) RC(2,7) RC(2,8) 
 	};	
 };
 
-/* &pinctrl { */
-/* 	spi0_default: spi0_default { */
-/* 		group1 { */
-/* 			psels = <NRF_PSEL(SPIM_SCK, 0, 5)>, */
-/* 				<NRF_PSEL(SPIM_MOSI, 0, 4)>, */
-/* 				<NRF_PSEL(SPIM_MISO, 0, 8)>; */
-/* 		}; */
-/* 	}; */
-/* 	spi0_sleep: spi0_sleep { */
-/* 		group1 { */
-/* 			psels = <NRF_PSEL(SPIM_SCK, 0, 5)>, */
-/* 				<NRF_PSEL(SPIM_MOSI, 0, 4)>, */
-/* 				<NRF_PSEL(SPIM_MISO, 0, 8)>; */
-/* 			low-power-enable; */
-/* 		}; */
-/* 	};	 */
-/* }; */
+&pinctrl {
+	spi0_default: spi0_default {
+		group1 {
+			psels = <NRF_PSEL(SPIM_SCK, 0, 5)>,
+				<NRF_PSEL(SPIM_MOSI, 0, 4)>,
+				<NRF_PSEL(SPIM_MISO, 0, 8)>;
+		};
+	};
+	spi0_sleep: spi0_sleep {
+		group1 {
+			psels = <NRF_PSEL(SPIM_SCK, 0, 5)>,
+				<NRF_PSEL(SPIM_MOSI, 0, 4)>,
+				<NRF_PSEL(SPIM_MISO, 0, 8)>;
+			low-power-enable;
+		};
+	};	
+};
 
 nice_view_spi: &spi0 {
 	compatible = "nordic,nrf-spim";
@@ -147,4 +147,8 @@ nice_view_spi: &spi0 {
   chosen {
     zephyr,display = &sharp;
   };
+};
+
+&usbd {
+	status = "okay";
 };
