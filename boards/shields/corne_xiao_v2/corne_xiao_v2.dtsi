@@ -85,3 +85,22 @@ RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5) RC(3,5) RC(3,6) RC(2,6) RC(2,7) RC(2,8) 
         triggers-per-rotation = <20>;
     };
 };
+
+&nice_view_spi {
+	status = "okay";
+	sharp: ls0xx@0 {
+		compatible = "sharp,ls0xx";
+		label = "DISPLAY";
+		spi-max-frequency = <2000000>;
+		reg = <0>;
+		width = <160>;
+		height = <68>;
+		//disp-en-gpios = <&gpio0 6 GPIO_ACTIVE_HIGH>; //testing setting this to 6 from 23
+	};
+};
+
+/ {
+  chosen {
+    zephyr,display = &sharp;
+  };
+};
