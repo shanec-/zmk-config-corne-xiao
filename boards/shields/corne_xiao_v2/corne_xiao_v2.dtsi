@@ -2,7 +2,7 @@
 #include <layouts/corne_xiao/6column.dtsi>
 #include <layouts/corne_xiao/5column.dtsi>
 
-/* &xiao_serial { status = "disabled"; }; */
+&xiao_serial { status = "disabled"; };
 
 &corne_xiao_6col_layout {
     transform = <&default_transform>;
@@ -149,6 +149,6 @@ nice_view_spi: &spi0 {
   };
 };
 
-&usbd {
-	status = "okay";
-};
+/* &usbd { */
+/* 	status = "okay"; */
+/* }; */
