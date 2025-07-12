@@ -1,11 +1,14 @@
 if SHIELD_CORNE_XIAO_V2_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "Corne"
+    default "Corne Left"
 
 endif
 
 if SHIELD_CORNE_XIAO_V2_RIGHT
+
+config ZMK_KEYBOARD_NAME
+    default "Corne"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
