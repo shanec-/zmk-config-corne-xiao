@@ -1,6 +1,6 @@
 #include "../miryoku/custom_config.h"
 #include "../miryoku/mapping/42/corne-xiao.h"
-#include "../miryoku/miryoku_nfx.dtsi"
+#include "../miryoku/custom_miryoku.dtsi"
 
 / {
     combos {
