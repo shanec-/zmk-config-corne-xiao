@@ -6,7 +6,7 @@
 #define MIRYOKU_EXTRA_COLEMAKDH
 #define MIRYOKU_NAV_VI
 
-#if defined (MIRYOKU_LAYOUTMAPPING_CORNE)
+// #if defined (MIRYOKU_LAYOUTMAPPING_CORNE)
 
 #define MIRYOKU_LAYER_BASE \
 &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
@@ -16,4 +16,4 @@ U_NP,              U_NP,              U_LT(U_MOUSE, TAB),U_LT(U_NAV, ESC),U_LT(U
 
 #define U_TAPPING_TERM 250
 
-#endif
+// #endif
