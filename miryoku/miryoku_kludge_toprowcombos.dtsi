@@ -57,6 +57,8 @@ toprowcombos_ ## LAYER ## _ ## POSITION { \
     #error "Not implemented. See https://github.com/manna-harbour/miryoku/issues/56"
   #elif defined (MIRYOKU_ALPHAS_WORKMAN)
     #error "Not implemented. See https://github.com/manna-harbour/miryoku/issues/56"
+  #elif defined (MIRYOKU_ALPHAS_GRAPHITE)
+    #error "Not implemented. See https://github.com/manna-harbour/miryoku/issues/56"
   #elif defined (MIRYOKU_ALPHAS_QWERTY)
     MIRYOKU_KLUDGE_TOPROWCOMBOS_MACRO(U_BASE, LEFTPINKIE, &kp Q)
     MIRYOKU_KLUDGE_TOPROWCOMBOS_MACRO(U_BASE, LEFTINNERINDEX, &kp T)

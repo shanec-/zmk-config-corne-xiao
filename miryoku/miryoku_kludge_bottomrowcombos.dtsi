@@ -30,6 +30,8 @@ bottomrowcombos_ ## LAYER ## _ ## POSITION { \
     #error "Not implemented. See https://github.com/manna-harbour/miryoku/issues/56"
   #elif defined (MIRYOKU_ALPHAS_QWERTY)
     #error "Not implemented. See https://github.com/manna-harbour/miryoku/issues/56"
+  #elif defined (MIRYOKU_ALPHAS_GRAPHITE)
+    #error "Not implemented. See https://github.com/manna-harbour/miryoku/issues/56"
   #elif defined (MIRYOKU_ALPHAS_QWERTZ)
     #error "Not implemented. See https://github.com/manna-harbour/miryoku/issues/56"
   #else
