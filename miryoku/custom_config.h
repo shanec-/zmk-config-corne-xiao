@@ -5,9 +5,9 @@
 
 #define MIRYOKU_ALPHAS_QWERTY
 #define MIRYOKU_TAP_QWERTY
-#define MIRYOKU_EXTRA_GRAPHITE
+// #define MIRYOKU_EXTRA_GRAPHITE
+#define MIRYOKU_EXTRA_GALLIUM
 #define MIRYOKU_NAV_VI
-
 
 #define MIRYOKU_LAYER_BASE \
 &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
